@@ -1,0 +1,374 @@
+.container {  
+    display: grid; 
+    grid-template-columns: 0.7fr 1.5fr 1.5fr 0.3fr; 
+    grid-template-rows: 0.1fr 0.2fr 0.2fr 0.5fr 0.09fr; 
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logo header header header"
+      "nav spotify def publicidad"
+      "nav spotify def publicidad"
+      "nav parrafo preg publicidad"
+      "footer footer footer footer";
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+  }
+  
+  .logo { 
+      grid-area: logo; 
+      position: relative;
+      left: 36px;
+      top: 70px;
+   
+}
+ .menu{ 
+        grid-area: nav;
+      display: flex;
+        font-size: 18px;
+        font-family: sans-serif;
+        color: white;
+        display: block;
+        background-color: rgb(187, 29, 8); size: 30px;
+        font-weight: bold;
+        grid-area: nav;
+        justify-content: space-between;
+
+    }
+    .menu ul li{
+        list-style-type: none;
+        list-style: none;
+        display:table-row;
+        margin: 45px;
+        padding: 30px;
+        justify-content: space-between;
+
+    }
+    .menu ul li a{
+        text-decoration: none;
+        color: white;
+        justify-content: space-between;
+
+    }
+    
+  .header {
+       grid-area: header;
+       font-size: 40px;
+       font-family: 'Times New Roman', Times, serif;
+       font-family: 'Ramaraja', serif;
+       color: black;
+       background-color:orange;
+       text-align: center;
+    }
+  
+  .spotify { grid-area: spotify; }
+  .spotify img{
+    position: relative;
+    top: 180px;
+    left: 60px;
+    justify-content: space-between;
+  }
+
+  .def { 
+      grid-area: def;
+      font-size: 25px;
+     }
+  .def img{
+      position: relative;
+      top: 20px;
+      left: 20px;
+      justify-content: space-between;
+  }
+  .def p{
+    font-size: 25px;
+    font-family:'Ramaraja', serif;
+    position: relative;
+    padding: 10px 10px;
+  }
+#fotosexp2{
+    position: relative;
+      top: 300px;
+      left: 20px;
+      height: 200px;
+      width: 200px;
+
+}
+  .parrafo { 
+      grid-area: parrafo;
+    overflow: auto; 
+    font-size: 20px;
+    font-family:'Ramaraja', serif;
+    background-color:rgb(106, 209, 106);
+    position: relative;
+
+}
+
+  
+  .preg { 
+      grid-area: preg; 
+      font-size: 35px;
+      font-family:'Ramaraja', serif;
+      background-color:white;
+      position: relative;
+      padding: 10px 10px;
+      text-align: center;
+  
+
+}
+  
+  .publicidad {
+       grid-area: publicidad;
+       display: flex;
+       flex-direction: column;
+}
+  .footer { 
+      grid-area: footer; 
+        font-size: 18px;
+        font-family: sans-serif;
+        color: white;
+        background-color: rgb(187, 29, 8); size: 30px;
+    }
+    .footer p{
+        font-size: 20px;
+        font-family:'Ramaraja', serif;
+        padding: 10px 10px;
+    }
+    .footer ul li{
+        font-family:'Ramaraja', serif;
+        list-style-type: none;
+        list-style: none;
+        display: inline;
+        margin: 45px;
+        padding: 30px;
+    }
+    .footer ul li a{
+        font-family:'Ramaraja', serif;
+        text-decoration: none;
+        color: white;
+    }
+    
+.publicidad img{
+    height: 550px;
+    width: 250px;
+    position:relative;
+    margin-top: 50px;
+    margin-right: 10px;
+    float: right;
+    flex-direction: column;
+
+}
+
+.conteiner2{  
+    display: grid; 
+    grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr; 
+    grid-template-rows: 0.1fr 0.2fr 0.5fr 0.09fr; 
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logo header header header"
+      "nav def def publicidad"
+      "nav parrafo parrafo2 publicidad"
+      "footer footer footer footer";
+      grid-column-gap: 10px;
+      grid-row-gap: 20px;
+  }
+
+.defArte{
+    grid-area: def;
+    font-size: 25px;
+    font-family:'Ramaraja', serif;
+    position: relative;
+    
+}
+
+.lista{
+    grid-area: parrafo; 
+    overflow: auto; 
+    font-size: 20px;
+    color: white;
+    font-family:'Ramaraja', serif;
+    background-color:rgb(0, 87, 141);
+    position: relative;
+}
+.lista a{
+    font-size: 20px;
+    font-family:'Ramaraja', serif;
+    color: white;
+}
+.expresion{
+    grid-area: parrafo2;
+    font-size: 20px;
+    font-family:'Ramaraja', serif;
+    background-color:rgb(106, 209, 106);
+    position: relative;
+}
+.expresion a{
+    font-size: 20px;
+    font-family:'Ramaraja', serif;
+    color: white;
+}
+
+.publicidad2{
+    grid-area: publicidad;
+     height: 100px;
+    width: 100px;
+    position:relative;
+    margin-top: 50px;
+    margin-right: 10px;
+    float: right;
+     flex-direction: column;
+}
+@media screen and (max-width:360px)
+{
+ .container{
+     grid-template-columns: 1fr 2fr;
+     grid-row: 1fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr;
+     grid-template-areas: 
+     "logo  logo"
+     "header header"
+     "nav nav"
+     "spotify publicidad"
+     "def publicidad"
+     "parrafo publicidad"
+     "preg preg"
+      "footer footer"
+     ;
+    }
+    .logo{
+         grid-area: logo;
+         position: relative;
+         top: 30px;
+         left: 30px;
+         right: 30px;
+    }
+    .spotify img{
+        height: 80%;
+        width: 50%;
+        margin: auto;
+        max-width: 100%;
+    }
+    .def{
+        grid-area: def;
+    }
+    .def img{
+        height: 80%;
+        width: 50%;
+        margin: auto;
+        max-width: 100%;
+    }
+    .menu{
+        grid-area: nav;
+    background-color: green;
+    }
+    .footer{
+        grid-area: footer;
+        background-color: green;
+    }
+}
+@media screen and (max-width:768px){
+.container{
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr;
+    grid-template-areas: 
+    "logo  logo"
+    "header header"
+    "nav nav"
+    "def publicidad "
+    "spotify publicidad "
+    "parrafo publicidad"
+    "preg preg"
+    "footer footer"
+    ;
+}
+.logo{
+    grid-area: logo;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+}
+.spotify img{
+   height: 80%;
+   width: 30%;
+   margin: auto;
+   max-width: 100%;
+}
+.def{
+   grid-area: def;
+}
+.def img{
+   height: 80%;
+   width: 50%;
+   margin: auto;
+   max-width: 100%;
+}
+.menu{
+   grid-area: nav;
+background-color:rgb(88, 88, 255);
+}
+.footer{
+   grid-area: footer;
+   background-color: rgb(88, 88, 255);
+}
+.header{
+    grid-area: header ;
+    width: 100%;
+    background-color:rgb(255, 88, 152);
+}
+.parrafo{
+    width: fit-content;
+    width: 100%;
+    background-color:rgb(174, 248, 0);
+}
+}
+@media screen and (max-width:768px){
+    .container2{
+        grid-template-columns: 1fr 1fr;
+        grid-row: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr;
+        grid-template-areas: 
+        "logo  logo"
+        "header header"
+        "nav nav"
+        "def publicidad "
+        "video publicidad "
+        "lista publicidad"
+        "expresion publicidad "
+         "footer footer"
+        ;
+    }
+    .logo{
+        grid-area: logo;
+        position: relative;
+        top: 30px;
+        left: 30px;
+        right: 30px;
+        justify-content: center;
+    }
+    .expresion{
+        grid-area: expresion;
+        background-color: rgb(208, 158, 255);
+        justify-content: center;
+    }
+    .lista{
+        grid-area: lista;
+        justify-content: center;
+    }
+    .menu{
+       grid-area: nav;
+    background-color:rgb(56, 243, 203);
+    justify-content: center;
+    }
+    .footer{
+       grid-area: footer;
+       background-color: rgb(56, 243, 203);
+       justify-content: center;
+    }
+    .header{
+        grid-area: header ;
+        width: 100%;
+        background-color:rgb(255, 88, 152);
+        justify-content: center;
+
+    }
+    }
+
+    
