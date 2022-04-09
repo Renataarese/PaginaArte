@@ -19,6 +19,8 @@
       position: relative;
       left: 36px;
       top: 70px;
+      height: 100px;
+      transition: height 2s;
    
 }
  .menu{ 
@@ -56,7 +58,7 @@
        font-family: 'Times New Roman', Times, serif;
        font-family: 'Ramaraja', serif;
        color: black;
-       background-color:orange;
+       background-image:linear-gradient(to right, rgb(42, 133, 72) , rgb(0, 162, 255), rgb(168, 40, 40));
        text-align: center;
     }
   
@@ -77,6 +79,8 @@
       top: 20px;
       left: 20px;
       justify-content: space-between;
+      width: 260px;
+      height: 260px;
   }
   .def p{
     font-size: 25px;
@@ -177,6 +181,7 @@
     font-size: 25px;
     font-family:'Ramaraja', serif;
     position: relative;
+    background-image:linear-gradient(to right, rgb(96, 51, 221) , rgb(255, 0, 170) rgb(55, 0, 255));
     
 }
 
@@ -198,7 +203,7 @@
     grid-area: parrafo2;
     font-size: 20px;
     font-family:'Ramaraja', serif;
-    background-color:rgb(106, 209, 106);
+    background-image:linear-gradient(to right, rgb(221, 210, 51) , rgb(255, 166, 0), rgb(255, 123, 0));
     position: relative;
 }
 .expresion a{
@@ -371,4 +376,179 @@ background-color:rgb(88, 88, 255);
     }
     }
 
+.conteiner3 {  
+        display: grid; 
+        grid-template-columns: 0.7fr 1.5fr 1.5fr 0.3fr; 
+        grid-template-rows: 0.1fr 0.2fr 0.2fr 0.5fr 0.09fr; 
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "logo header header header"
+          "nav vagogh parrafova publicidad"
+          "nav hiperrealismo hiperrealismo publicidad"
+          "nav imageexpo1 imageexpo2 publicidad"
+          "footer footer footer footer";
+          grid-column-gap: 10px;
+          grid-row-gap: 10px;
+}
+
+.header{
+    grid-area: header;
+
+}
+.logo{grid-area: logo;}
+
+.vagogh{
+    grid-area: vagogh;
+}
+.menu{
+    grid-area:nav ;
+}
+.hiperrealismo{
+    grid-area: hiperrealismo;
+    font-size: 20px;
+    font-family:'Ramaraja', serif;
+    background-image:linear-gradient(to right, rgb(80, 164, 212) , rgb(247, 127, 227), rgb(144, 226, 123));
+    position: relative;
+}
+.parrafova{
+    grid-area: parrafova;
+    width: 460px;
+    overflow: auto;
+    font-size: 20px;
+    font-family:'Ramaraja', serif;
+    background-color:rgb(106, 209, 106);
+    position: relative;
+}
+.imagexpo1{
+    grid-area: imageexpo1;
+    top: 20px;
+    left: 50px;
+}
+.imagexpo2{
+    grid-area: imageexpo2;
+    top: 20px;
+    left: 50px;
+}
+.publicidad3{
+    grid-area: publicidad;
+}
+.publicidad3 img{
+height: 330px;
+width: 250px;
+position:relative;
+margin-top: 10px;
+margin-right: 10px;
+float: right;
+flex-direction: column;}
+.footer{
+    grid-area: footer;
+}
+
+.conteiner4{
+    display: grid; 
+    grid-template-columns: 0.7fr 3fr 0.3fr; 
+    grid-template-rows: 0.1fr 0.2fr 0.2fr 0.5fr 0.09fr; 
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logo logo logo"
+      "header header header "
+      "nav music publicidad"
+      "nav  idie publicidad"
+      "nav video publicidad"
+      "footer footer  footer";
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+}
+.logo{
+    grid-area: logo;
+}
+.header{
+    grid-area: header;
+}
+.menu{
+    grid-area:nav ;
+}
+.music{
+grid-area: music;
+}
+.idie{
+    grid-area: idie;
+    font-size: 20px;
+    font-family:'Ramaraja', serif;
+    position: relative;
+    color: white;
+    background-image: linear-gradient(to bottom, rgb(91, 158, 15) , rgba(255, 238, 0, 0.89));
+}
+
+.video{
+    grid-area: video;
     
+}
+.video iframe{
+    left: 100px;
+}
+.publicidad4{
+    grid-area: publicidad;
+}
+.publicidad4 img{
+height: 460px;
+width: 250px;
+position:relative;
+margin-top: 10px;
+margin-right: 10px;
+float: right;
+flex-direction: column;}
+.footer{
+    grid-area: footer;
+}
+.conteiner5{
+    display: grid; 
+    grid-template-columns: 0.7fr 3fr 0.3fr; 
+    grid-template-rows: 0.1fr 0.2fr 0.5fr 0.2fr; 
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logo logo logo"
+      "header header header "
+      "nav form puli"
+      "nav footer puli";
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+}
+.logo{
+    grid-area: logo;
+}
+.header{
+    grid-area: header;
+}
+.menu{
+    grid-area: nav;
+}
+.form{
+    grid-area: form;
+    background-image:linear-gradient(to right, rgb(80, 164, 212) , rgb(247, 127, 227), rgb(144, 226, 123));
+    text-align: center;
+    font-size: 25px;
+    font-family:'Ramaraja', serif;
+    position: relative;
+    padding: 10px 10px;
+}
+
+.puli{
+    grid-area: puli;
+}
+.puli img{
+    height: 700px;
+    width: 300px;
+}
+.footer{
+    grid-area: footer;
+    left: 40px;
+}
+
+
+
+
+
