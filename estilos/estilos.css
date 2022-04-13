@@ -1,36 +1,19 @@
-.container {  
-    display: grid; 
-    grid-template-columns: 0.7fr 1.5fr 1.5fr 0.3fr; 
-    grid-template-rows: 0.1fr 0.2fr 0.2fr 0.5fr 0.09fr; 
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "logo header header header"
-      "nav spotify def publicidad"
-      "nav spotify def publicidad"
-      "nav parrafo preg publicidad"
-      "footer footer footer footer";
-      grid-column-gap: 10px;
-      grid-row-gap: 10px;
-  }
-  
+
   .logo { 
-      grid-area: logo; 
-      position: relative;
       left: 36px;
       top: 70px;
       height: 100px;
-      transition: height 2s;
    
 }
  .menu{ 
+        grid-area: nav;
+      display: flex;
         font-size: 18px;
         font-family: sans-serif;
         color: white;
         display: block;
         background-color: rgb(187, 29, 8); size: 30px;
-        font-weight: bold;
-        grid-area: nav;
+        font-weight: bold
         justify-content: space-between;
 
     }
