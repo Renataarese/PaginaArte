@@ -1,486 +1,108 @@
-
- .menu{ 
-
-        font-size: 18px;
-        font-family: sans-serif;
-        color: white;
-        display: block;
-        background-color: rgb(187, 29, 8); size: 30px;
-        font-weight: bold
-
-    }
-    .menu ul li{
-        list-style-type: none;
-        list-style: none;
-        display:table-row;
-        justify-content: space-between;
-
-    }
-    .menu ul li a{
-        text-decoration: none;
-        color: white;
-        justify-content: space-between;
-
-    }
-    
-  .header {
-       font-size: 40px;
-       font-family: 'Times New Roman', Times, serif;
-       font-family: 'Ramaraja', serif;
-       color: black;
-       text-align: center;
-       width: 100px;
-       height: 100px;
-    }
-  
-  .spotify img{
-    justify-content: space-between;
-  }
-
-  .def {
-      font-size: 25px;
-     }
-  .def img{
-      justify-content: space-between;
-      width: 260px;
-      height: 260px;
-      
-  }
-  .def p{
+.col-12.titulo{
+    background-color: greenyellow;
+}
+.logo{
+    background-color: rgb(196, 20, 20);;
+}
+.container-fluid.me{
+background-color: rgb(196, 20, 20);;
+}
+ .meu ul{
+     background-color: rgb(196, 20, 20);
+     color: white;
+     font-size: 18px;
+     font-family: sans-serif;
+ } 
+ .meu ul li{
+    background-color: rgb(196, 20, 20);
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+} 
+.meu ul li a{
+    background-color: rgb(196, 20, 20);
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+} 
+.nav-item{
+    background-color: rgb(196, 20, 20);
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+.nav-link{
+    background-color: rgb(196, 20, 20);
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+.row.def{
+    background-color:rgb(106, 209, 106);
+}
+.col-12{
+    background-color:rgb(106, 209, 106);
+}
+.preg1 h2{
+    background-color:rgb(106, 209, 106);
     font-size: 25px;
     font-family:'Ramaraja', serif;
-    position: relative;
+    background-color:white;
     padding: 10px 10px;
-  }
-#fotosexp2{
-      height: 200px;
-      width: 200px;
-
-}
-  .parrafo { 
-    overflow: auto; 
-    font-size: 20px;
-    font-family:'Ramaraja', serif;
-    background-color:rgb(106, 209, 106);
-
-}
-
-  
-  .preg { 
-      font-size: 35px;
-      font-family:'Ramaraja', serif;
-      background-color:white;
-      padding: 10px 10px;
-      text-align: center;
-
-}
-  
-  .publicidad {
-       grid-area: publicidad;
-       display: flex;
-       flex-direction: column;
-}
-  .footer { 
-      grid-area: footer; 
-        font-size: 18px;
-        font-family: sans-serif;
-        color: white;
-        background-color: rgb(187, 29, 8); size: 30px;
-    }
-    .footer p{
-        font-size: 20px;
-        font-family:'Ramaraja', serif;
-        padding: 10px 10px;
-    }
-    .footer ul li{
-        font-family:'Ramaraja', serif;
-        list-style-type: none;
-        list-style: none;
-    }
-    .footer ul li a{
-        font-family:'Ramaraja', serif;
-        text-decoration: none;
-        color: white;
-    }
-    
-.publicidad img{
-    height: 550px;
-    width: 250px;
-
-}
-
-
-.defArte{
-    font-size: 25px;
-    font-family:'Ramaraja', serif;
-    position: relative;
-    
-}
-
-.lista{
-    overflow: auto; 
-    font-size: 20px;
-    color: white;
-    font-family:'Ramaraja', serif;
-    background-color:rgb(0, 87, 141);
-}
-.lista a{
-    font-size: 20px;
-    font-family:'Ramaraja', serif;
-    color: white;
-}
-.expresion{
-    grid-area: parrafo2;
-    font-size: 20px;
-    font-family:'Ramaraja', serif;
-    position: relative;
-}
-.expresion a{
-    font-size: 20px;
-    font-family:'Ramaraja', serif;
-    color: white;
-}
-
-.publicidad2{
-     height: 100px;
-    width: 100px;
-}
-
-
-
-
-@media screen and (max-width:360px)
-{
- .container{
-     grid-template-columns: 1fr 2fr;
-     grid-row: 1fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr;
-     grid-template-areas: 
-     "logo  logo"
-     "header header"
-     "nav nav"
-     "spotify publicidad"
-     "def publicidad"
-     "parrafo publicidad"
-     "preg preg"
-      "footer footer"
-     ;
-    }
-    .logo{
-         grid-area: logo;
-         position: relative;
-         top: 30px;
-         left: 30px;
-         right: 30px;
-    }
-    .spotify img{
-        height: 80%;
-        width: 50%;
-        margin: auto;
-        max-width: 100%;
-    }
-    .def{
-        grid-area: def;
-    }
-    .def img{
-        height: 80%;
-        width: 50%;
-        margin: auto;
-        max-width: 100%;
-    }
-    .menu{
-        grid-area: nav;
-    background-color: green;
-    }
-    .footer{
-        grid-area: footer;
-        background-color: green;
-    }
-}
-@media screen and (max-width:768px){
-.container{
-    grid-template-columns: 1fr 1fr;
-    grid-row: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr;
-    grid-template-areas: 
-    "logo  logo"
-    "header header"
-    "nav nav"
-    "def publicidad "
-    "spotify publicidad "
-    "parrafo publicidad"
-    "preg preg"
-    "footer footer"
-    ;
-}
-.logo{
-    grid-area: logo;
-    position: relative;
-    top: 30px;
-    left: 30px;
-    right: 30px;
-}
-.spotify img{
-   height: 80%;
-   width: 30%;
-   margin: auto;
-   max-width: 100%;
-}
-.def{
-   grid-area: def;
-}
-.def img{
-   height: 80%;
-   width: 50%;
-   margin: auto;
-   max-width: 100%;
-}
-.menu{
-   grid-area: nav;
-background-color:rgb(88, 88, 255);
-}
-.footer{
-   grid-area: footer;
-   background-color: rgb(88, 88, 255);
-}
-.header{
-    grid-area: header ;
-    width: 100%;
-    background-color:rgb(255, 88, 152);
-}
-.parrafo{
-    width: fit-content;
-    width: 100%;
-    background-color:rgb(174, 248, 0);
-}
-}
-@media screen and (max-width:768px){
-    .container2{
-        grid-template-columns: 1fr 1fr;
-        grid-row: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr;
-        grid-template-areas: 
-        "logo  logo"
-        "header header"
-        "nav nav"
-        "def publicidad "
-        "video publicidad "
-        "lista publicidad"
-        "expresion publicidad "
-         "footer footer"
-        ;
-    }
-    .logo{
-        grid-area: logo;
-        position: relative;
-        top: 30px;
-        left: 30px;
-        right: 30px;
-        justify-content: center;
-    }
-    .expresion{
-        grid-area: expresion;
-        background-color: rgb(208, 158, 255);
-        justify-content: center;
-    }
-    .lista{
-        grid-area: lista;
-        justify-content: center;
-    }
-    .menu{
-       grid-area: nav;
-    background-color:rgb(56, 243, 203);
-    justify-content: center;
-    }
-    .footer{
-       grid-area: footer;
-       background-color: rgb(56, 243, 203);
-       justify-content: center;
-    }
-    .header{
-        grid-area: header ;
-        width: 100%;
-        background-color:rgb(255, 88, 152);
-        justify-content: center;
-
-    }
-    }
-
-.conteiner3 {  
-        display: grid; 
-        grid-template-columns: 0.7fr 1.5fr 1.5fr 0.3fr; 
-        grid-template-rows: 0.1fr 0.2fr 0.2fr 0.5fr 0.09fr; 
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-          "logo header header header"
-          "nav vagogh parrafova publicidad"
-          "nav hiperrealismo hiperrealismo publicidad"
-          "nav imageexpo1 imageexpo2 publicidad"
-          "footer footer footer footer";
-          grid-column-gap: 10px;
-          grid-row-gap: 10px;
-}
-
-.header{
-    grid-area: header;
-
-}
-.logo{grid-area: logo;}
-
-.vagogh{
-    grid-area: vagogh;
-}
-.menu{
-    grid-area:nav ;
-}
-.hiperrealismo{
-    grid-area: hiperrealismo;
-    font-size: 20px;
-    font-family:'Ramaraja', serif;
-    position: relative;
-    background-image:linear-gradient(to right, rgb(221, 210, 51) , rgb(255, 166, 0), rgb(255, 123, 0));
-    animation-iteration-count: infinite;
-   animation-timing-function: ease;
-   animation-duration: 2s;
-   animation-delay: 10s;
-}
-.parrafova{
-    grid-area: parrafova;
-    width: 460px;
-    overflow: auto;
-    font-size: 20px;
-    font-family:'Ramaraja', serif;
-    background-color:rgb(106, 209, 106);
-    position: relative;
-}
-.imagexpo1{
-    grid-area: imageexpo1;
-    top: 20px;
-    left: 50px;
-}
-.imagexpo2{
-    grid-area: imageexpo2;
-    top: 20px;
-    left: 50px;
-}
-.publicidad3{
-    grid-area: publicidad;
-}
-.publicidad3 img{
-height: 330px;
-width: 250px;
-position:relative;
-margin-top: 10px;
-margin-right: 10px;
-float: right;
-flex-direction: column;}
-.footer{
-    grid-area: footer;
-}
-
-.conteiner4{
-    display: grid; 
-    grid-template-columns: 0.7fr 3fr 0.3fr; 
-    grid-template-rows: 0.1fr 0.2fr 0.2fr 0.5fr 0.09fr; 
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "logo logo logo"
-      "header header header "
-      "nav music publicidad"
-      "nav  idie publicidad"
-      "nav video publicidad"
-      "footer footer  footer";
-      grid-column-gap: 10px;
-      grid-row-gap: 10px;
-}
-.logo{
-    grid-area: logo;
-}
-.header{
-    grid-area: header;
-}
-.menu{
-    grid-area:nav ;
-}
-.music{
-grid-area: music;
-}
-.idie{
-    grid-area: idie;
-    font-size: 20px;
-    font-family:'Ramaraja', serif;
-    position: relative;
-    background-image:linear-gradient(to right, rgb(80, 164, 212) , rgb(247, 127, 227), rgb(144, 226, 123));
-}
-
-.video{
-    grid-area: video;
-    
-}
-.video iframe{
-    left: 100px;
-}
-.publicidad4{
-    grid-area: publicidad;
-}
-.publicidad4 img{
-height: 460px;
-width: 250px;
-position:relative;
-margin-top: 10px;
-margin-right: 10px;
-float: right;
-flex-direction: column;}
-.footer{
-    grid-area: footer;
-}
-.conteiner5{
-    display: grid; 
-    grid-template-columns: 0.7fr 3fr 0.3fr; 
-    grid-template-rows: 0.1fr 0.2fr 0.5fr 0.2fr; 
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "logo logo logo"
-      "header header header "
-      "nav form puli"
-      "nav footer puli";
-      grid-column-gap: 10px;
-      grid-row-gap: 10px;
-}
-.logo{
-    grid-area: logo;
-
-}
-.header{
-    grid-area: header;
-
-}
-.menu{
-    grid-area: nav;
-}
-.form{
-    grid-area: form;
     text-align: center;
+
+}
+.def1{
     font-size: 25px;
     font-family:'Ramaraja', serif;
     position: relative;
     padding: 10px 10px;
-    background-image: linear-gradient(to bottom, rgb(91, 158, 15) , rgba(255, 238, 0, 0.89));
+}
+.def2{
+    font-size: 20px;
+    font-family:'Ramaraja', serif;
+    background-color:rgb(106, 209, 106);
+
 }
 
-.puli{
-    grid-area: puli;
+.carousel.slide{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    left: 350px;
 }
-.puli img{
-    height: 700px;
-    width: 300px;
+.parrafoex{
+    font-size: 20px;
+    font-family:'Ramaraja', serif;
+    background-color:rgb(106, 209, 106);
 }
-.footer{
-    grid-area: footer;
-    left: 40px;
+.col-6.preg{
+    font-size: 55px;
+    font-family:'Ramaraja', serif;
+    background-color:white;
+    padding: 10px 10px;
+    text-align: center;
+    justify-content: space-between;
 }
-
-
-
-
-
+.col-6.lista{
+    font-size: 20px;
+    font-family:'Ramaraja', serif;
+    background-color:rgb(252, 201, 74);
+    padding: 10px 10px;
+    text-align: center;
+    justify-content: space-between;
+}
+.col-6.texto{
+    font-size: 20px;
+    font-family:'Ramaraja', serif;
+    background-color:aquamarine;
+    padding: 10px 10px;
+    justify-content: space-between;
+}
+.col-12.fi{
+    font-size: 15px;
+    font-family:'Ramaraja', serif;
+    background-color:rgb(229, 127, 255);
+    padding: 10px 10px;
+    justify-content: space-between;
+}
