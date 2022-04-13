@@ -24,8 +24,6 @@
    
 }
  .menu{ 
-        grid-area: nav;
-      display: flex;
         font-size: 18px;
         font-family: sans-serif;
         color: white;
@@ -60,6 +58,9 @@
        color: black;
        background-image:linear-gradient(to right, rgb(42, 133, 72) , rgb(0, 162, 255), rgb(168, 40, 40));
        text-align: center;
+       width: 100px;
+       height: 100px;
+       transform: skewY(25deg)
     }
   
   .spotify { grid-area: spotify; }
@@ -73,6 +74,7 @@
   .def { 
       grid-area: def;
       font-size: 25px;
+      background-image:linear-gradient(to right, rgb(221, 210, 51) , rgb(255, 166, 0), rgb(255, 123, 0));
      }
   .def img{
       position: relative;
@@ -81,6 +83,7 @@
       justify-content: space-between;
       width: 260px;
       height: 260px;
+      
   }
   .def p{
     font-size: 25px;
@@ -115,6 +118,10 @@
       position: relative;
       padding: 10px 10px;
       text-align: center;
+      animation-duration: 20s;
+      animation-name: aparecer;
+      animation-iteration-count: infinite;
+   
   
 
 }
@@ -181,7 +188,6 @@
     font-size: 25px;
     font-family:'Ramaraja', serif;
     position: relative;
-    background-image:linear-gradient(to right, rgb(96, 51, 221) , rgb(255, 0, 170) rgb(55, 0, 255));
     
 }
 
@@ -203,7 +209,6 @@
     grid-area: parrafo2;
     font-size: 20px;
     font-family:'Ramaraja', serif;
-    background-image:linear-gradient(to right, rgb(221, 210, 51) , rgb(255, 166, 0), rgb(255, 123, 0));
     position: relative;
 }
 .expresion a{
@@ -408,8 +413,12 @@ background-color:rgb(88, 88, 255);
     grid-area: hiperrealismo;
     font-size: 20px;
     font-family:'Ramaraja', serif;
-    background-image:linear-gradient(to right, rgb(80, 164, 212) , rgb(247, 127, 227), rgb(144, 226, 123));
     position: relative;
+    background-image:linear-gradient(to right, rgb(221, 210, 51) , rgb(255, 166, 0), rgb(255, 123, 0));
+    animation-iteration-count: infinite;
+   animation-timing-function: ease;
+   animation-duration: 2s;
+   animation-delay: 10s;
 }
 .parrafova{
     grid-area: parrafova;
@@ -478,8 +487,7 @@ grid-area: music;
     font-size: 20px;
     font-family:'Ramaraja', serif;
     position: relative;
-    color: white;
-    background-image: linear-gradient(to bottom, rgb(91, 158, 15) , rgba(255, 238, 0, 0.89));
+    background-image:linear-gradient(to right, rgb(80, 164, 212) , rgb(247, 127, 227), rgb(144, 226, 123));
 }
 
 .video{
@@ -519,21 +527,23 @@ flex-direction: column;}
 }
 .logo{
     grid-area: logo;
+
 }
 .header{
     grid-area: header;
+
 }
 .menu{
     grid-area: nav;
 }
 .form{
     grid-area: form;
-    background-image:linear-gradient(to right, rgb(80, 164, 212) , rgb(247, 127, 227), rgb(144, 226, 123));
     text-align: center;
     font-size: 25px;
     font-family:'Ramaraja', serif;
     position: relative;
     padding: 10px 10px;
+    background-image: linear-gradient(to bottom, rgb(91, 158, 15) , rgba(255, 238, 0, 0.89));
 }
 
 .puli{
