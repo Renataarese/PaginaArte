@@ -1,26 +1,35 @@
+
+.col-12.titulo{
+        animation-duration: 2s;
+        animation-name: aparecer;
+        animation-iteration-count: infinite;
+     }
+.logo {
+    width: 100px;
+    height: 100px;
+    animation-name: aparece;
+ }
+       
 @keyframes aparecer {
-    0% {opacity: 100%;}
-    25% {opacity: 75%;}
-    50% {opacity: 50%;}
-    75% {opacity: 25%;}
-    100% {opacity: 0%;}
- }
- h1.col-12.titulo{
-     margin: 10px;
-     text-align: center;
-     display: flex;
-     flex-direction: row;
-     animation-delay: 2s;
-     animation-duration: 5s;
-     animation-iteration-count: infinite;
-     animation-timing-function: linear;
- }
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+     }
+     
  
 .a.nav-link{
     color: white !important;
     size: 30px !important;
     text-align: center;
 }
+a:hover{ font-weight:bold; background-color:blue; color:white; text-decoration:underline; }
+a:link{ text-decoration:none; color:red; }
+a:visited{ color:#999999; }
+a:active{ background-color:yellow; color:black; }
+
 .navbar-nav .nav-link.active{
     color: white !important;
     size: 30px !important;
@@ -30,10 +39,18 @@
     color: white !important;
     size: 30px !important;
     text-align: center;
+    align-items: center;
 }
 .col-12.titulo{
     background-color: #8f0065;
     color: white;
+    text-align: center;
+}
+.h1.col-12.titulo{
+    background-color: #8f0065;
+    color: white;
+    text-align: center;
+    align-items: center;
 }
 .logo{
     background-color:#33b242;
