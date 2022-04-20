@@ -1,0 +1,35 @@
+.navbar-nav .nav-link {
+  color: white !important;
+  size: 30px !important;
+  text-align: center;
+  align-items: center; }
+
+.meu ul {
+  background-color: #33b242;
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif; }
+  .meu ul li {
+    background-color: #33b242;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif; }
+    .meu ul li a {
+      background-color: #33b242;
+      color: white;
+      font-size: 18px;
+      font-family: sans-serif; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.preg1 h2 {
+  background-color: #b32b85;
+  font-size: 25px;
+  font-family: 'Ramaraja', serif;
+  background-color: white;
+  padding: 10px 10px;
+  text-align: center; }
