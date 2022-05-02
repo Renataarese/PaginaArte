@@ -22,3 +22,10 @@ padding: 10px 10px;
 text-align: center;}
 
 }
+
+@each $copa, $color in $copado {
+    .btn--#{$copa} {
+        background-color: $color;
+    }
+ }
+ 

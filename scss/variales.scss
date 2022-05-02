@@ -1,3 +1,69 @@
 $colorpri:#b32b85;
 $colorsecu: #33b242;
 $asico:white;
+
+$copado: ( 
+        vibra: #2ce91b,
+        felicidad: #3de2ff,
+        armonia: rgb(240, 37, 240),
+    
+); 
+@each $copa, $color in $copado {
+    .btn--#{$copa} {
+        background-color: $color;
+    }
+ }
+
+.boton {
+	width:200px;
+	height:50px;
+	background-color:white;
+	text-align:center;
+	color:black;
+	border-radius:20px;
+	border:1px solid black;
+}
+
+.boton--aceptar{
+	@extend .boton;
+	background-color:green;
+	color:yellow;
+}
+
+.boton--cancelar{
+	@extend .boton;
+	background-color:red;
+	color:yellow;
+}
+
+@mixin sizes($width, $height, $color2) {
+    height: $height;
+    width: $width;
+    color: color2; 
+ }
+ .box {
+    @include sizes(500px, 50px, rgb(0, 207, 69));
+ }
+ .botonVibra{
+    @include sizes(10px, 250px, rgb(0, 55, 207));
+ }
+ 
+@mixin flexbox ($flex, $direction, $wrap){
+display: $flex;
+flex-direction: $direction;
+flex-wrap: $wrap
+}
+
+.caja{
+    @include flexbox(flex,row,wrap )
+}
+
+ @mixin flexRowCenter{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+}
+.box {
+   @include flexRowCenter;
+}
+

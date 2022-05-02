@@ -1,24 +1,52 @@
 .navbar-nav .nav-link {
-  color: white !important;
-  size: 30px !important;
   text-align: center;
   align-items: center; }
 
-.meu ul {
-  background-color: #33b242;
-  color: white;
-  font-size: 18px;
-  font-family: sans-serif; }
-  .meu ul li {
-    background-color: #33b242;
-    color: white;
-    font-size: 18px;
-    font-family: sans-serif; }
-    .meu ul li a {
-      background-color: #33b242;
-      color: white;
-      font-size: 18px;
-      font-family: sans-serif; }
+.btn--vibra {
+  background-color: #2ce91b; }
+
+.btn--felicidad {
+  background-color: #3de2ff; }
+
+.btn--armonia {
+  background-color: #f025f0; }
+
+.boton, .boton--aceptar, .boton--cancelar {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  border: 1px solid black; }
+
+.boton--aceptar {
+  background-color: green;
+  color: yellow; }
+
+.boton--cancelar {
+  background-color: red;
+  color: yellow; }
+
+.box {
+  height: 50px;
+  width: 500px;
+  color: color2; }
+
+.botonVibra {
+  height: 250px;
+  width: 10px;
+  color: color2; }
+
+.caja {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 @keyframes aparecer {
   0% {
@@ -33,3 +61,12 @@
   background-color: white;
   padding: 10px 10px;
   text-align: center; }
+
+.btn--vibra {
+  background-color: #2ce91b; }
+
+.btn--felicidad {
+  background-color: #3de2ff; }
+
+.btn--armonia {
+  background-color: #f025f0; }
