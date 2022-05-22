@@ -17,9 +17,8 @@
         100% {
           opacity: 1;
         }
-     }
-     
- 
+     }    
+
 .a.nav-link{
     color: white !important;
     size: 30px !important;
@@ -29,6 +28,90 @@ a:hover{ font-weight:bold; background-color:blue; color:white; text-decoration:u
 a:link{ text-decoration:none; color:red; }
 a:visited{ color:#999999; }
 a:active{ background-color:yellow; color:black; }
+
+@media screen and (max-width: 480px){
+    .carousel-item-active{
+        position: relative;
+        right: 200px;
+        align-items: center;
+        align-content: center;
+    }
+    #carouselExampleControls{
+        position: relative;
+        right: 100px;
+
+    }
+    .carousel-inner{
+        position: relative;
+        right: 400px;
+        align-items: center;
+        align-content: center;
+    }
+    .div.carousel-item-active{
+        position: relative;
+        right: 200px;
+        align-items: center;
+        align-content: center;
+    }
+    .map1{
+        height: 300px;
+        width: 350px;
+    }
+}
+@media screen and (min-width: 481px)and(max-width: 768px){
+    .row img{
+        height: 300px;
+        width: 300px;
+    }
+    .carousel-inner{
+        position: relative;
+        right: 500px;
+        align-items: center;
+        align-content: center;
+    }
+    .carousel-item-active{
+        position: relative;
+        right: 300px;
+        align-items: center;
+        align-content: center;
+    }
+    #carouselExampleControls{
+        position: relative;
+        right: 100px;
+
+    }
+    .div.carousel-inner{
+        position: relative;
+        right: 600px;
+        align-items: center;
+        align-content: center;
+    }
+    .div.carousel-item-active{
+        position: relative;
+        right: 600px;
+        align-items: center;
+        align-content: center;
+    }
+    .img.d-block.w-100{
+        position: relative;
+        right: 600px;
+        align-items: center;
+        align-content: center;
+    }
+    .map1{
+        height: 400px;
+        width: 250px;
+    }
+    .musicaa{
+        height: 200px;
+    }
+}
+@media screen and (min-width: 769px)and(max-width: 1024px){
+    .map1{
+        height: 400px;
+        width: 50px;
+    }
+}
 
 .navbar-nav .nav-link.active{
     color: white !important;
@@ -91,7 +174,7 @@ background-color: #33b242;
 .row.def{
     background-color:#b32b85;
 }
-.col-12{
+.col-lg-12.col-md-12.col-sm-12.text-center{
     background-color:#b32b85;
     color: white;
 }
@@ -127,7 +210,7 @@ background-color: #33b242;
     height: 100px !important;
     width:150px;
 }
-.col-6{
+.col-lg-6.col-md-6.col-sm-12{
     background-color: #33b242;
 }
 .parrafoex{
@@ -135,7 +218,7 @@ background-color: #33b242;
     font-family:'Ramaraja', serif;
     background-color:rgb(106, 209, 106);
 }
-.col-6.preg{
+.preg.col-lg-6.col-md-6.col-sm-12{
     font-size: 55px;
     font-family:'Ramaraja', serif;
     background-color:white;
@@ -144,7 +227,7 @@ background-color: #33b242;
     justify-content: space-between;
     background-color: #b32b85;
 }
-.col-6.lista{
+.lista.col-lg-6.col-md-6.col-sm-12.text-center{
     font-size: 20px;
     font-family:'Ramaraja', serif;
     background-color:rgb(106, 209, 106);
@@ -152,24 +235,24 @@ background-color: #33b242;
     text-align: center;
     justify-content: space-between;
 }
-.col-6.texto{
+.texto.col-lg-6.col-md-6.col-sm-12.text-center{
     font-size: 20px;
     font-family:'Ramaraja', serif;
     background-color:#b32b85;
     padding: 10px 10px;
     justify-content: space-between;
 }
-.col-12.fi{
+.fi.col-lg-4.col-md-4.col-sm-12 {
     font-size: 15px;
     font-family:'Ramaraja', serif;
     background-color:#b32b85;
     padding: 10px 10px;
     justify-content: space-between;
 }
-.col-6.map{
+.map.col-lg-6.col-md-6.col-sm-12.text-center{
     background-color:#b32b85;
 }
-.col-6.maptext{
+.maptext.ol-lg-6.col-md-6.col-sm-12.text-center{
     overflow: scroll;
     height: 652px;
     font-size: 20px;
@@ -177,13 +260,13 @@ background-color: #33b242;
     font-family:'Ramaraja', serif;
     background-color:#33b242 ;
 }
-.col-6.carousel.slide{
+.carousel.slide.col-lg-6.col-md-6.col-sm-12{
     width: 200px;
     height: 400px;
     position: relative;
     top: 100px;
 }
-.col-6.hiper{
+.hiper.col-lg-6.col-md-6.col-sm-12 {
     font-size: 20px;
     font-family:'Ramaraja', serif;
     background-color:#33b242;
@@ -203,7 +286,7 @@ background-color: #33b242;
     top: 50px;
     font-size: 20px;
 }
-.col-12.fi{
+.fi.col-lg-12.col-md-12.col-sm-12{
     font-size: 20px;
 }
 .row.footer{
@@ -242,7 +325,7 @@ background-color: #33b242;
 .row.idie{
     background-color:#33b242;
 }
- .col-8.for{
+ .for.col-lg-8.col-md-12.col-sm-12{
     background-color:#b32b85;
     color: white;
     font-family:'Ramaraja', serif;
